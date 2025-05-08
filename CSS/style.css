@@ -73,7 +73,14 @@
 
 
 
-
+.idiomas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontalmente */
+    justify-content: center;
+    text-align: center;
+    margin: 30px auto;
+}
 
 
 
@@ -115,6 +122,29 @@ html, body {
 
 
 
+
+/* ESTUDIOS */
+  .info-estudio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .info-estudio img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  }
+
+  .item-estudio {
+margin-left: 50px;
+  }
+
+
+  
 
 
 
