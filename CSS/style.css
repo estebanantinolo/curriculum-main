@@ -1,29 +1,55 @@
+/* Añadir la tipografia */
+@font-face {
+  font-family:Comfortaa;
+  src: url(./../Tipografia/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+
+
+/* Tipo de letra para todo el html */
+.body {
+  font-family: "Comfortaa";
+}
+
+
+/* Ajustar medida de iconos Encabezado y Footer */
 .iconos {
     width: 30px;
     height: 30px;
-
 }
 
+
+.iconos:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease; /* Hacerse grande cuando el cursor está encima del elemento */
+}
+
+
+/* Edicion del Menu */
 .menu {
     background-color: rgba(0, 0, 0, 0.384);
     height: 50px;
     display: flex;
-    align-items: center;     /* Centra verticalmente */
+    align-items: center;     /* Centrar verticalmente */
 }
 
+
+/* Ajustar medida de iconos de selección de idioma */
 .bandera_idioma {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
+
+/* Posición del icono de seleccion de idioma */
 .menu_idioma {
-    position: absolute;
-    top: 70px;         /* ajusta según necesidad */
-    right: 20px;
+    position: absolute; /* Colocarlo teniendo en cuenta las medidas de abajo */
+    top: 70px;         /* Ajustar cuanta distancia hay hasta el "top" de la pagina */
+    right: 20px;        /* Ajustar cuanta distancia hay hasta el "lado derecho" de la pagina */
 }
 
 
+/* Edidción del titulo principal de todas las paginas */
 .titulo-principal {
     font-size: 3rem;
     margin: 60px 0 30px 0;
@@ -32,9 +58,11 @@
     color: #333;
 }
 
+
 .titulo-principal:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Mover hacia arriba cuando el cursor está encima del elemento */
 }
+
 
 .contenedor-cuadros {
     display: flex;
@@ -43,6 +71,7 @@
     flex-wrap: wrap;
     padding-bottom: 60px;
 }
+
 
 .cuadro {
     background-color: #ffffff;
@@ -57,20 +86,22 @@
     color: #333;
 }
 
+
 .cuadro:hover {
     transform: translateY(-5px);
     background-color: #1774ff65;
 }
+
 
 .img-fluid {
     width: 250px;
     height: 250px;
 }
 
+
 .inferior {
     background-color: black;
 }
-
 
 
 .idiomas {
@@ -81,11 +112,6 @@
     text-align: center;
     margin: 30px auto;
 }
-
-
-
-
-
 
 
 /* Estructura para que el footer quede abajo */
@@ -101,10 +127,12 @@ html, body {
   background-attachment: fixed;  /* Permite efecto "parallax" */
   }
   
+
   main {
     flex: 1;
   }
   
+
   .footer {
     background-color: #000;
     color: #fff;
@@ -113,16 +141,7 @@ html, body {
     padding-bottom: 2rem;
   }
   
-  .footer a:hover img {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-  }
   
-  
-
-
-
-
 /* ESTUDIOS */
   .info-estudio {
     display: flex;
@@ -130,6 +149,7 @@ html, body {
     gap: 15px;
   }
   
+
   .info-estudio img {
     width: 60px;
     height: auto;
@@ -139,14 +159,7 @@ html, body {
     box-shadow: 0 1px 5px rgba(0,0,0,0.1);
   }
 
+
   .item-estudio {
 margin-left: 50px;
   }
-
-
-  
-
-
-
-  
-  
