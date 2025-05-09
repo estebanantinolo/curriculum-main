@@ -1,165 +1,167 @@
-/* Añadir la tipografia */
+/* Añadir la tipografía */
 @font-face {
-  font-family:Comfortaa;
+  font-family: Comfortaa;
   src: url(./../Tipografia/Comfortaa/Comfortaa-VariableFont_wght.ttf);
 }
 
-
-/* Tipo de letra para todo el html */
+/* Tipo de letra para todo el HTML */
 .body {
   font-family: "Comfortaa";
 }
 
-
-/* Ajustar medida de iconos Encabezado y Footer */
+/* Iconos del encabezado y footer */
 .iconos {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
-
+/* Se agranda al pasar el cursor por los iconos */
 .iconos:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease; /* Hacerse grande cuando el cursor está encima del elemento */
+  transition: transform 0.3s ease;
 }
 
-
-/* Edicion del Menu */
+/* Menú centrado verticalmente */
 .menu {
-    background-color: rgba(0, 0, 0, 0.384);
-    height: 50px;
-    display: flex;
-    align-items: center;     /* Centrar verticalmente */
+  background-color: rgba(0, 0, 0, 0.384);
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
-
-/* Ajustar medida de iconos de selección de idioma */
+/* Iconos redondos de selección de idioma */
 .bandera_idioma {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
-
-/* Posición del icono de seleccion de idioma */
+/* Posicionamiento del menú de idioma */
 .menu_idioma {
-    position: absolute; /* Colocarlo teniendo en cuenta las medidas de abajo */
-    top: 70px;         /* Ajustar cuanta distancia hay hasta el "top" de la pagina */
-    right: 20px;        /* Ajustar cuanta distancia hay hasta el "lado derecho" de la pagina */
+  position: absolute;
+  top: 70px;
+  right: 20px;
 }
 
-
-/* Edidción del titulo principal de todas las paginas */
+/* Título principal centrado con gran tamaño */
 .titulo-principal {
-    font-size: 3rem;
-    margin: 60px 0 30px 0;
-    text-align: center;
-    font-weight: bold;
-    color: #333;
+  font-size: 3rem;
+  margin: 60px 0 30px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
 }
 
-
+/* Moverse hacia arriba cuando pasa el cursor por encima del titulo */
 .titulo-principal:hover {
-    transform: translateY(-5px); /* Mover hacia arriba cuando el cursor está encima del elemento */
+  transform: translateY(-5px);
 }
 
-
+/* Edicion de los cuadros del index */
 .contenedor-cuadros {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 60px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
 }
 
-
+/*  */
 .cuadro {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
-    font-weight: 600;
-    color: #333;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
 }
 
-
+/* Movimiento cuando pasa por encima el cursor de los cuadros de index */
 .cuadro:hover {
-    transform: translateY(-5px);
-    background-color: #1774ff65;
+  transform: translateY(-5px);
+  background-color: #1774ff65;
 }
 
-
+/* Imagen personal */
 .img-fluid {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }
 
-
+/* Fondo del footer */
 .inferior {
-    background-color: black;
+  background-color: black;
 }
 
-
+/* Alinear selección de idiomas */
 .idiomas {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centra horizontalmente */
-    justify-content: center;
-    text-align: center;
-    margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30px auto;
 }
 
+/* Edición del fondo */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./../Imagenes/fondototal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-/* Estructura para que el footer quede abajo */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-image: url(./../Imagenes/fondototal.jpg);
-    background-size: cover;        /* Cubre toda la pantalla */
-  background-repeat: no-repeat;  /* Evita que se repita */
-  background-position: center;   /* Centra la imagen */
-  background-attachment: fixed;  /* Permite efecto "parallax" */
-  }
-  
+/* Como se ve el footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
-  main {
-    flex: 1;
-  }
-  
+/*  Edicion de los div de estudios*/
+.info-estudio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-  .footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  
-  
-/* ESTUDIOS */
-  .info-estudio {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
+/* Imagen de estudio borde fondo y sombra */
+.info-estudio img {
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .info-estudio img {
-    width: 60px;
-    height: auto;
-    border-radius: 8px;
-    background-color: white;
-    padding: 5px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  }
+/* Margen de los div de estudios */
+.item-estudio {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
 
+/* Borde y tamaño videos de YT */
+.video_yt {
+  border-radius: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .item-estudio {
-margin-left: 50px;
-  }
+/* Centrar video de YT */
+.video {
+  display: flex;
+  justify-content: center;
+}
