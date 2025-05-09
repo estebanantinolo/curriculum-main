@@ -9,16 +9,17 @@
   font-family: "Comfortaa";
 }
 
-/* Iconos del encabezado y footer */
+/* Iconos del encabezado y footer y estrellas */
 .iconos {
   width: 30px;
   height: 30px;
+  margin-bottom: 15px;
 }
 
 /* Se agranda al pasar el cursor por los iconos */
 .iconos:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+  transform: scale(1.1); /*Tamaño que se hace mas grande  */
+  transition: transform 0.3s ease; /* Tiempo que tarda en hacer el efecto */
 }
 
 /* Menú centrado verticalmente */
@@ -26,7 +27,7 @@
   background-color: rgba(0, 0, 0, 0.384);
   height: 50px;
   display: flex;
-  align-items: center;
+  align-items: center; /* Alineación */
 }
 
 /* Iconos redondos de selección de idioma */
@@ -62,11 +63,11 @@
   display: flex;
   gap: 30px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Para que estén en diferentes líneas */
   padding-bottom: 60px;
 }
 
-/*  */
+/* Cuadros que aparecen al principio */
 .cuadro {
   background-color: #ffffff;
   padding: 40px 20px;
@@ -74,7 +75,8 @@
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease; /* Tiempo que tarda en transicionar */
+  background-color 0.3s ease;
   cursor: pointer;
   font-weight: 600;
   color: #333;
@@ -83,13 +85,14 @@
 /* Movimiento cuando pasa por encima el cursor de los cuadros de index */
 .cuadro:hover {
   transform: translateY(-5px);
-  background-color: #1774ff65;
+  background-color: #5517ff9f;
 }
 
 /* Imagen personal */
 .img-fluid {
   width: 250px;
   height: 250px;
+  margin-bottom: 10px;
 }
 
 /* Fondo del footer */
@@ -126,15 +129,15 @@ body {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2rem; /* Para que haya margen arriba */
+  padding-bottom: 2rem; /* Para que haya espacio abajo */
 }
 
 /*  Edicion de los div de estudios*/
 .info-estudio {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 15px; /* Lo ancho que hay entre divs */
 }
 
 /* Imagen de estudio borde fondo y sombra */
@@ -149,8 +152,9 @@ body {
 
 /* Margen de los div de estudios */
 .item-estudio {
-  margin-left: 50px;
-  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-right: 10px;
 }
 
 /* Borde y tamaño videos de YT */
@@ -165,3 +169,5 @@ body {
   display: flex;
   justify-content: center;
 }
+
+
